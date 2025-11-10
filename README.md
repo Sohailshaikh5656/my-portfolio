@@ -43,18 +43,18 @@ portfolio-website/
 │   └── index.js
 ├── package.json
 └── README.md
-
 ```
+
 <br />
 <h3>⚙️ Installation & Setup</h3>
 <br />
 <p>Follow these steps to run this project locally:</p>
 <br />
 ```bash
-Prerequisites
-Make sure you have the following installed:
-Node.js (version 14 or higher)
-npm (comes with Node.js)
+    Prerequisites
+    Make sure you have the following installed:
+    Node.js (version 14 or higher)
+    npm (comes with Node.js)
 ```
 
 <h4>Installation Steps</h4>
