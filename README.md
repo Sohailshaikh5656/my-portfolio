@@ -50,31 +50,36 @@ portfolio-website/
 <br />
 <p>Follow these steps to run this project locally:</p>
 <br />
+
 ```bash
-    Prerequisites
+     Prerequisites
     Make sure you have the following installed:
     Node.js (version 14 or higher)
     npm (comes with Node.js)
 ```
-
 <h4>Installation Steps</h4>
 <h6>1.Clone the repository</h6>
+
 ```bash
     git clone https://github.com/Sohailshaikh5656/my-portfolio.git
 ```
 <h6>2.Navigate to the project directory</h6>
+
 ```bash
     cd my-portfolio
 ```
 <h6>3.Install dependencies</h6>
+
 ```bash
    npm install
 ```
 <h6>4.Start the development server</h6>
+
 ```bash
    npm start
 ```
 <h6>5.Open your browser</h6>
+
 ```bash
    #The application will automatically open in your default browser at http://localhost:3000
 ```
