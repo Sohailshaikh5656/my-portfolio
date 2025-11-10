@@ -1,13 +1,479 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --primary: #2563eb;
+    --secondary: #1e40af;
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --gray: #64748b;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: var(--dark);
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--primary) !important;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--dark) !important;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary) !important;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+    padding: 5rem 0;
+}
+
+.profile-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.headline {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--dark);
+}
+
+.headline span {
+    color: var(--primary);
+}
+
+.bio {
+    font-size: 1.1rem;
+    color: var(--gray);
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.btn-primary-custom {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    transform: translateY(-2px);
+}
+
+.btn-outline-custom {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-outline-custom:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.tech-section {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.tech-item {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f8fafc;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+}
+
+.tech-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.current-work {
+    padding: 4rem 0;
+    background-color: #f1f5f9;
+}
+
+.work-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.work-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 3rem 0 2rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .headline {
+        font-size: 2rem;
+    }
+    
+    .profile-img {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .hero-section {
+        padding: 3rem 0;
+    }
+
+}
+
+/* resume Css*/
+
+/* Resume.css */
+.resume-section {
+    margin-bottom: 2.5rem;
+}
+
+.resume-header {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    color: white;
+    padding: 2.5rem 0;
+    margin-bottom: 2rem;
+}
+
+.resume-contact a {
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+.resume-contact a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.resume-timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.resume-timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e2e8f0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #3b82f6;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px #3b82f6;
+}
+
+/* Tech Badges */
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-badge {
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: default;
+}
+
+.skill-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Skill Colors */
+.skill-badge.javascript { background: linear-gradient(135deg, #F7DF1E, #D4BB0F); color: black; }
+.skill-badge.python { background: linear-gradient(135deg, #3776AB, #2B5B84); }
+.skill-badge.php { background: linear-gradient(135deg, #777BB4, #5F639C); }
+.skill-badge.java { background: linear-gradient(135deg, #ED8B00, #D17D00); }
+.skill-badge.react { background: linear-gradient(135deg, #61DAFB, #4FC3F7); color: black; }
+.skill-badge.nextjs { background: linear-gradient(135deg, #000000, #333333); }
+.skill-badge.nodejs { background: linear-gradient(135deg, #339933, #267326); }
+.skill-badge.express { background: linear-gradient(135deg, #000000, #333333); }
+.skill-badge.django { background: linear-gradient(135deg, #092E20, #0C3526); }
+.skill-badge.laravel { background: linear-gradient(135deg, #FF2D20, #E8261A); }
+.skill-badge.html { background: linear-gradient(135deg, #E34F26, #D4431F); }
+.skill-badge.css { background: linear-gradient(135deg, #1572B6, #1264A3); }
+.skill-badge.bootstrap { background: linear-gradient(135deg, #7952B3, #6A48A0); }
+.skill-badge.redux { background: linear-gradient(135deg, #764ABC, #6842A8); }
+.skill-badge.mysql { background: linear-gradient(135deg, #4479A1, #3A6890); }
+.skill-badge.sqlite { background: linear-gradient(135deg, #003B57, #002F47); }
+.skill-badge.git { background: linear-gradient(135deg, #F05032, #E03C2D); }
+.skill-badge.github { background: linear-gradient(135deg, #181717, #000000); }
+.skill-badge.postman { background: linear-gradient(135deg, #FF6C37, #E55A2E); }
+
+/* Project Cards */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Certifications */
+.cert-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cert-badge {
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    color: #1e40af;
+    border: 1px solid #dbeafe;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.cert-badge:hover {
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+    transform: translateX(5px);
+}
+
+/* Soft Skills */
+.soft-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.soft-skill-item {
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+    color: #475569;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.soft-skill-item:hover {
+    background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tech-badges {
+        justify-content: center;
+    }
+    
+    .resume-timeline {
+        padding-left: 1.5rem;
+    }
+    
+    .timeline-item::before {
+        left: -1.5rem;
+    }
+}
+
+
+/* Project */
+.project-card {
+transition: all 0.3s ease;
+border-radius: 15px;
+overflow: hidden;
+background: linear-gradient(145deg, #ffffff, #f8f9fa);
+}
+
+.project-card:hover {
+transform: translateY(-8px);
+box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
+}
+
+.project-image-container {
+height: 220px;
+background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+}
+
+.project-image {
+height: 100%;
+object-fit: cover;
+transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+transform: scale(1.1);
+}
+
+.project-overlay {
+background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+opacity: 1;
+}
+
+.overlay-content {
+transform: translateY(20px);
+transition: transform 0.3s ease;
+}
+
+.project-card:hover .overlay-content {
+transform: translateY(0);
+}
+
+.project-title {
+font-size: 1.25rem;
+line-height: 1.4;
+min-height: 3.5rem;
+}
+
+.project-description {
+font-size: 0.95rem;
+line-height: 1.6;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+}
+
+.tech-badge {
+background: linear-gradient(135deg, #667eea, #764ba2);
+color: white;
+padding: 0.4rem 0.8rem;
+border-radius: 20px;
+font-size: 0.8rem;
+font-weight: 500;
+transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+transform: scale(1.05);
+box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+.tech-badge-more {
+background: #6c757d;
+color: white;
+padding: 0.4rem 0.8rem;
+border-radius: 20px;
+font-size: 0.8rem;
+font-weight: 500;
+}
+
+.feature-item {
+padding: 0.3rem 0;
+font-size: 0.9rem;
+display: flex;
+align-items: flex-start;
+}
+
+.feature-item i {
+margin-top: 0.2rem;
+flex-shrink: 0;
+}
+
+.btn-hover {
+transition: all 0.3s ease;
+border-radius: 8px;
+font-weight: 500;
+}
+
+.btn-hover:hover {
+transform: translateY(-2px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.load-more-btn {
+border-radius: 50px;
+transition: all 0.3s ease;
+}
+
+.load-more-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.shadow-hover {
+box-shadow: 0 5px 20px rgba(0,0,0,0.08) !important;
 }
