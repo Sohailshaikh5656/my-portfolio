@@ -25,7 +25,7 @@ function latestProjects() {
 
                                     <div className="mt-auto d-flex gap-2">
                                         <a
-                                            href={project.liveDemoUrl || "#"}
+                                            href={project.liveDemoUrl || "/"}
                                             target={project.liveDemoUrl ? "_blank" : "_self"}
                                             rel={project.liveDemoUrl ? "noopener noreferrer" : ""}
                                             className={`btn btn-primary btn-lg ${!project.liveDemoUrl ? 'disabled' : ''}`}
@@ -35,7 +35,7 @@ function latestProjects() {
                                             <i className="fas fa-external-link-alt me-2"></i>
                                             Live Demo
                                         </a> 
-                                        <a href={project.githubUrl || "#"}
+                                        <a href={project.githubUrl || "/"}
                                         target={project.githubUrl ? "_blank" : "_self"}
                                         rel={project.githubUrl ? "noopener noreferrer" : ""}
                                         className="btn btn-sm btn-outline-custom flex-grow-1">
