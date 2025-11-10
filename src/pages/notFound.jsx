@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function NotFound() {
+  document.getElementsByTagName("title")[0].innerText = "Not Found !";
   return (
     <div className="container my-5">
       <div className="row justify-content-center">

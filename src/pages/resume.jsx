@@ -3,7 +3,7 @@ import React from 'react';
 function MyResume() {
   const handleResume = () => {
         const resumeUrl = '/my-resume/ShaikhSohel_FullStack.pdf';
-
+        document.getElementsByTagName("title")[0].innerText = "Shaikh Sohel - Resume";
         const link = document.createElement('a');
         link.href = resumeUrl;
         link.download = 'Sohel-FullStackResume.pdf';

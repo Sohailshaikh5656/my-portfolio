@@ -6,7 +6,7 @@ import emailjs from 'emailjs-com';
 
 function Contact() {
   const [btn, setBtn] = useState(false);
-  
+  document.getElementsByTagName("title")[0].innerText = "Shaikh Sohel - Contact";
   const initialState = {
     name: "",
     email: "",

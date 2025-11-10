@@ -2,6 +2,8 @@ import React from 'react';
 
 function Achievements() {
   // Certificates data from your resume
+
+  document.getElementsByTagName("title")[0].innerText = "Shaikh Sohel - Achievements";
   const certificates = [
     {
       id: 1,

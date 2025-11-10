@@ -12,6 +12,7 @@ function SingleProject() {
   if (Array.isArray(project)) {
     project = project[0]
   }
+  document.getElementsByTagName("title")[0].innerText = `${project.title} - Shaikh Sohel`;
   return (
     <div className="container my-5">
       {/* Back Button */}

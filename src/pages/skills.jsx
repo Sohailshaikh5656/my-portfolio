@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Skills() {
+  document.getElementsByTagName("title")[0].innerText = "Shaikh Sohel - Skills";
   const skillsData = {
     frontend: [
       { name: "React", level: 90, icon: "fab fa-react", color: "#61DAFB" },
