@@ -6,10 +6,10 @@ function footer() {
       <div className="container text-center">
         <p className="fs-5 mb-4">Let's build something amazing together!</p>
         <div className="social-links mb-4">
-          <a target='_blank' href="https://www.linkedin.com/in/sohail-shaikh-153467283" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/sohail-shaikh-153467283" target='_blank' rel="noopener noreferrer">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a target='_blank' href="https://github.com/Sohailshaikh5656" rel="noopener noreferrer">
+          <a href="https://github.com/Sohailshaikh5656" target='_blank' rel="noopener noreferrer">
             <i className="fab fa-github"></i>
           </a>
           <a href="https://twitter.com/yourusername" rel="noopener noreferrer">

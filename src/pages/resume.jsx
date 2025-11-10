@@ -19,7 +19,7 @@ function MyResume() {
       <div className="container-fluid bg-light py-2 border-bottom">
         <div className="container">
           <div className="d-flex justify-content-end">
-            <a className="btn btn-primary" onClick={()=>{handleResume()}}>
+            <a href='#' className="btn btn-primary" onClick={()=>{handleResume()}}>
               <i className="fas fa-download me-2"></i>Download Resume
             </a>
           </div>

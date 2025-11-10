@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import projectData from '../components/common/projectData';
 import { useNavigate } from 'react-router-dom';
 
@@ -6,7 +6,6 @@ function Projects() {
     const navigate = useNavigate()
     const projectsData = projectData
     const [visibleProjects, setVisibleProjects] = useState(6);
-    document.getElementsByTagName("title")[0].innerText = "Shaikh Sohel - Projects";
     const loadMore = () => {
         setVisibleProjects(prev => prev + 3);
     };
