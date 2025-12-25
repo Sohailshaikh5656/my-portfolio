@@ -30,7 +30,7 @@ function heroSection() {
                         <h1 className="headline">I'm <span>Shaikh Sohel</span> — Full Stack Developer <br />(React | Node.js | Laravel)</h1>
                         <p className="bio">Passionate developer with expertise in building scalable web applications. I transform ideas into functional, user-friendly digital solutions with clean code and modern technologies.</p>
                         <div className="d-flex flex-wrap gap-3">
-                            <a onClick={() => { handleResume() }} className="btn btn-primary-custom">
+                            <a onClick={() => { handleResume() }} className="btn btn-primary-custom text-white">
                                 <i className="fas fa-file-download me-2"></i>Download Resume
                             </a>
                             <a onClick={() => { handleHireMe() }} className="btn btn-outline-custom">
@@ -39,7 +39,7 @@ function heroSection() {
                         </div>
                     </div>
                     <div className="col-lg-6 text-center order-lg-2 order-1 mb-4 mb-lg-0">
-                        <img src="/avatarImg.png" alt="Shaikh Sohel" className="profile-img" />
+                        <img src="/my_profileImage.jpeg" alt="Shaikh Sohel" className="profile-img" />
                     </div>
                 </div>
             </div>
